@@ -18,6 +18,8 @@ class String
 
   def count_sentences
     dividers = [".", "!", "?"]
-  self.split('.')
+    dividers.each do |char|
+      self.split(char)
+    end 
   end
 end
