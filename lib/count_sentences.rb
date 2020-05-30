@@ -16,7 +16,7 @@ class String
 
   end
 
-  def count_sentences
+  def count_sentences(string)
     dividers = [".", "!", "?"]
     dividers.each do |char|
       #binding.pry
