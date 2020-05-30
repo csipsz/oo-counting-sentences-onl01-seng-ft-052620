@@ -17,6 +17,7 @@ class String
   end
 
   def count_sentences
+    dividers = [".", "!", "?"]
   self.split('.')
   end
 end
