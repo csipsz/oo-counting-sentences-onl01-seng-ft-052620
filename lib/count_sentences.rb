@@ -21,6 +21,6 @@ class String
     dividers.each do |char|
       #binding.pry
       count = self.split(char).length
-  end
+    end
   count
 end
