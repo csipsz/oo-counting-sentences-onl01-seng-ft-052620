@@ -20,9 +20,9 @@ class String
     dividers = [".", "!", "?"]
     dividers.each do |char|
       binding.pry
-      count = self.split(char).length
+      count = self.split(char)
     end
-  count
+  count.size
 end
 
 end
