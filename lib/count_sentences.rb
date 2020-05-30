@@ -17,12 +17,13 @@ class String
   end
 
   def count_sentences
-    dividers = [".", "!", "?"]
-    dividers.each do |char|
-      binding.pry
-      count = self.split(char)
-    end
-  count.size
+    count = 0 
+   self.split(' ').each do |word| 
+     if self.sentence? || self.question? || self.exclamation? 
+       count += 1 
+     end 
+   end 
+   count
 end
 
 end
